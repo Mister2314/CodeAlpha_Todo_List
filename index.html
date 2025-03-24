@@ -4,12 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+    <div class="container">
+        <div class="todo-wrapper">
+            <h1>My Todos</h1>
 
+            <div class="input-area">
+                <input type="text" id="todo-input" placeholder="Add a new task">
+                <button id="add-btn">Add</button>
+            </div>
+
+            <div class="filter-btns">
+                <button id="complete-filter">Completed</button>
+                <button id="uncomplete-filter">Uncompleted</button>
+            </div>
+
+            <ul id="todo-list"></ul>
+
+            <div class="delete-all">
+                <button id="delete-all">Delete All</button>
+            </div>
+        </div>
+    </div>
 
     <script src="./assets/js/index.js"></script>
 </body>
